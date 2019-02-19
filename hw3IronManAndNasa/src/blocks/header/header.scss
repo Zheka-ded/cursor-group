@@ -1,0 +1,43 @@
+.header{
+
+    &__wrap{
+        width: 95vw;
+        height: 70vh;
+        background: linear-gradient(to right bottom, #1a191f, #373743, #808080, #fff);
+        opacity: 0.6;
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+
+        &-link{
+            display: flex;
+            width: 7vw;
+            height: 5vh;
+            background: url('../img/the_avengers___logo_original___3d_02___png_by_itstotallytoxic-dccakw7.png');
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+
+    &__nav{
+
+        // &-ul{
+        // }
+
+        // &-li{
+        // }
+
+        &-link{
+            transform: rotate(90deg);
+            transform-origin: left top 0;
+            // word-wrap: break-word;
+            // writing-mode: vertical-rl;
+        }
+
+    }
+
+}
+

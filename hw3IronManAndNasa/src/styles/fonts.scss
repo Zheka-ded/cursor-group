@@ -1,0 +1,17 @@
+// !!!   HEADER FONTS   !!! //
+
+.header{
+
+    &__nav-link{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: #fff;
+        // transform: rotate(-90deg);
+
+        &:hover{
+            color: #942e23;
+        }
+
+    }
+
+}

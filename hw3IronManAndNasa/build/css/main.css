@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 10px; }
+
+@media (min-width: 2400px) {
+  html {
+    font-size: 20px; } }
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 9px; } }
+
+@media (max-width: 1240px) {
+  html {
+    font-size: 8px; } }
+
+@media (max-width: 1020px) {
+  html {
+    font-size: 7px; } }
+
+.body {
+  font-size: 1.6rem; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto; }
+
+a, ul, li {
+  text-decoration: none;
+  list-style: none; }
+
+.header__nav-link {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #fff; }
+  .header__nav-link:hover {
+    color: #942e23; }
+
+.body__bg-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/IronMan.jpg");
+  background-position: top;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1; }
+  .body__bg-content::after {
+    content: "";
+    background-color: #19191e;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1; }
+
+.header__wrap {
+  width: 95vw;
+  height: 70vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#1a191f), color-stop(#373743), color-stop(#808080), to(#fff));
+  background: -webkit-linear-gradient(left top, #1a191f, #373743, #808080, #fff);
+  background: -o-linear-gradient(left top, #1a191f, #373743, #808080, #fff);
+  background: linear-gradient(to right bottom, #1a191f, #373743, #808080, #fff);
+  opacity: 0.6; }
+
+.header__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .header__logo-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 7vw;
+    height: 5vh;
+    background: url("../img/the_avengers___logo_original___3d_02___png_by_itstotallytoxic-dccakw7.png");
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+
+.header__nav-link {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: left top 0;
+      -ms-transform-origin: left top 0;
+          transform-origin: left top 0; }
