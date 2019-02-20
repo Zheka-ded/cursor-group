@@ -1,12 +1,17 @@
 header.header
     .header__wrap
-        .header__logo
-            a.header__logo-link(href="index.html" target="blank")
-        nav.header__nav
-            ul.header__nav-ul
-                li.header__nav-li
-                    a.header__nav-link(href="#")|iron man
-                li.header__nav-li
-                    a.header__nav-link(href="#")|spider man
-                li.header__nav-li
-                    a.header__nav-link(href="#")|captain america
+        .header__top
+            menu.header__menu
+                i(class="fas fa-bars")
+            .header__logo
+                a.header__logo-link(href="index.html" target="blank")
+        .header__center
+            nav.header__nav
+                ul.header__nav-ul
+                    li.header__nav-li
+                        a.header__nav-link(href="#")|iron man
+                    li.header__nav-li
+                        a.header__nav-link(href="#")|spider man
+                    li.header__nav-li
+                        a.header__nav-link(href="#")|captain america
+            include ../heroes/heroes.pug

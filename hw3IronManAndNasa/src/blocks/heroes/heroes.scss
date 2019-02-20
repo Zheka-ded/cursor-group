@@ -1,0 +1,45 @@
+.heroes{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    width: 93%;
+
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__left-section{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        background: #fff;
+        // z-index: 5;
+    }
+
+    &__right-section{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        background: url('../img/avengers-infinity-war-trailer-reveals-how-the-guardians-of-t_4zfr.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+
+        &::after{
+            content: "";
+                background-color: #19191e;
+                width: 53%;
+                height: 60.1%;
+                position: absolute;
+                opacity: 0.9;
+                z-index: -1;
+        }
+
+    }
+
+}
