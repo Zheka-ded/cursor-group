@@ -3,15 +3,25 @@
 .header{
 
     &__nav-link{
-        font-size: 1.1rem;
+        font-size: 1.5vh;
         text-transform: uppercase;
         color: #fff;
         // transform: rotate(-90deg);
 
         &:hover{
-            color: #942e23;
+            color: #f02009;
         }
 
     }
 
+}
+
+.fa-bars{
+    font-size: 2.5vh;
+}
+
+.heroes__title-text{
+    font-size: 16vh;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
