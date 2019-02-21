@@ -14,16 +14,19 @@
     &__left-section{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 40%;
         height: 100%;
         background: #fff;
         opacity: 1;
         position: relative;
+        
     }
 
     &__right-section{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 60%;
         height: 100%;
         background: url('../img/avengers-infinity-war-trailer-reveals-how-the-guardians-of-t_4zfr.jpg');
@@ -40,6 +43,20 @@
                 position: absolute;
                 opacity: 0.9;
                 z-index: -1;
+        }
+
+        &::before{
+            content: "";
+            background: url('../img/ironman_PNG66.png');
+            background-position: center;
+            background-size: cover;
+            // width: 25%;
+            // height: 100%;
+            width: 22vw;
+            height: 83vh;
+            position: absolute;
+            left: -10vw;
+            z-index: 1;
         }
 
     }
