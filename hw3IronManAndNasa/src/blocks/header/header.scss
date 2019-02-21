@@ -13,11 +13,14 @@
         flex-direction: row;
         height: 6vh;
         align-items: center;
+        position: relative;
     }
 
     &__menu{
         color: #fff;
-        padding-left: 3vw;
+        // padding-left: 3vw;
+        position: absolute;
+        left: 3vw;
     }
 
     &__logo{

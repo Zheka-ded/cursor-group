@@ -152,11 +152,13 @@ a, ul, li {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
 
 .header__menu {
   color: #fff;
-  padding-left: 3vw; }
+  position: absolute;
+  left: 3vw; }
 
 .header__logo {
   display: -webkit-box;
