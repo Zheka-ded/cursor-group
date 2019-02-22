@@ -1,6 +1,25 @@
 section.heroes
-    .heroes__wrap
-        .heroes__left-section
-            p.heroes__title-text.red|iron
-        .heroes__right-section
-            p.heroes__title-text.white|man
+    .heroes__wrap.slider__content
+        .heroes__iron.mySlides.fade
+            .heroes__left-section-iron
+                p.heroes__title-text-iron.red|iron
+            .heroes__right-section-iron
+                p.heroes__title-text-iron.white|man
+        .heroes__spider.mySlides.fade
+            .heroes__left-section-spider
+                p.heroes__title-text-spider.red|spider
+            .heroes__right-section-spider
+                p.heroes__title-text-spider.white|man
+        .heroes__captain.mySlides.fade
+            .heroes__left-section-captain
+                p.heroes__title-text-captain.red|captain
+            .heroes__right-section-captain
+                p.heroes__title-text-captain.white|america
+        a.prev(onclick="plusSlides(-1)")
+            i(class="fas fa-chevron-circle-left")
+        a.next(onclick="plusSlides(1)")
+            i(class="fas fa-chevron-circle-right")
+        .dot-wrap(style="text-align: center")
+            span.dot(onclick="plusSlides(1)")
+            span.dot(onclick="plusSlides(2)")
+            span.dot(onclick="plusSlides(3)")

@@ -86,10 +86,11 @@ a, ul, li {
 .fa-bars {
   font-size: 2.5vh; }
 
-.heroes__title-text {
+.heroes__title-text-iron, .heroes__title-text-spider, .heroes__title-text-captain {
   font-size: 16vh;
   text-transform: uppercase;
-  font-weight: bolder; }
+  font-weight: bolder;
+  letter-spacing: 1.3vw; }
 
 .red {
   color: red;
@@ -245,6 +246,14 @@ a, ul, li {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
 
+.heroes__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
 .heroes {
   display: -webkit-box;
   display: -webkit-flex;
@@ -257,7 +266,7 @@ a, ul, li {
           flex-direction: row;
   background: black;
   width: 93%; }
-  .heroes__wrap {
+  .heroes__iron {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -269,7 +278,7 @@ a, ul, li {
             flex-direction: row;
     width: 100%;
     height: 100%; }
-  .heroes__left-section {
+  .heroes__left-section-iron {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -288,7 +297,179 @@ a, ul, li {
     background: #fff;
     opacity: 1;
     position: relative; }
-  .heroes__right-section {
+  .heroes__right-section-iron {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+    height: 100%;
+    background: url("../img/Avengers-2-Age-of-Ultron-Mental-Toughness.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    position: relative;
+    z-index: 0; }
+    .heroes__right-section-iron::after {
+      content: "";
+      background-color: #19191e;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.9;
+      z-index: -1; }
+    .heroes__right-section-iron::before {
+      content: "";
+      background: url("../img/ironman_PNG66.png");
+      background-position: center;
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: no-repeat;
+      width: 22vw;
+      height: 83vh;
+      position: absolute;
+      left: -10vw;
+      z-index: 1; }
+
+.heroes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: black;
+  width: 93%; }
+  .heroes__spider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 100%; }
+  .heroes__left-section-spider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    opacity: 1;
+    position: relative; }
+  .heroes__right-section-spider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+    height: 100%;
+    background: url("../img/Avengers-3-Infinity-War-Spider-Man-Marvel-Movies.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    position: relative;
+    z-index: 0; }
+    .heroes__right-section-spider::after {
+      content: "";
+      background-color: #19191e;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.9;
+      z-index: -1; }
+    .heroes__right-section-spider::before {
+      content: "";
+      background: url("../img/spider_man_PNG33.png");
+      background-position: center;
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: no-repeat;
+      width: 22vw;
+      height: 83vh;
+      position: absolute;
+      left: -10vw;
+      z-index: 1; }
+
+.heroes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: black;
+  width: 93%; }
+  .heroes__captain {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 100%; }
+  .heroes__left-section-captain {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    opacity: 1;
+    position: relative; }
+  .heroes__right-section-captain {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -310,7 +491,7 @@ a, ul, li {
             background-size: cover;
     position: relative;
     z-index: 0; }
-    .heroes__right-section::after {
+    .heroes__right-section-captain::after {
       content: "";
       background-color: #19191e;
       width: 100%;
@@ -318,14 +499,89 @@ a, ul, li {
       position: absolute;
       opacity: 0.9;
       z-index: -1; }
-    .heroes__right-section::before {
+    .heroes__right-section-captain::before {
       content: "";
-      background: url("../img/ironman_PNG66.png");
+      background: url("../img/captain_america_PNG91.png");
       background-position: center;
-      -webkit-background-size: cover;
-              background-size: cover;
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: no-repeat;
       width: 22vw;
       height: 83vh;
       position: absolute;
       left: -10vw;
       z-index: 1; }
+
+.slider__content {
+  position: relative;
+  margin: auto; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -5rem;
+  color: #fff;
+  font-size: 3rem;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  margin-left: 4rem; }
+  .prev:hover, .next:hover {
+    color: #0070af; }
+
+.next {
+  right: 0;
+  margin-right: 4rem; }
+
+.dot-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -2vw;
+  bottom: 46%; }
+
+.dot {
+  cursor: pointer;
+  width: 1vh;
+  height: 1vh;
+  margin: 1vh 0;
+  border: 0.1vh solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }

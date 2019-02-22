@@ -20,10 +20,13 @@
     font-size: 2.5vh;
 }
 
-.heroes__title-text{
+// !!! HEROES FONTS !!! //
+
+.heroes__title-text-iron, .heroes__title-text-spider, .heroes__title-text-captain{
     font-size: 16vh;
     text-transform: uppercase;
     font-weight: bolder;
+    letter-spacing: 1.3vw;
 }
 
 .red{
