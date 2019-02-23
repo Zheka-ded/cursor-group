@@ -87,17 +87,42 @@ a, ul, li {
   font-size: 2.5vh; }
 
 .heroes__title-text-iron, .heroes__title-text-spider, .heroes__title-text-captain {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16vh;
   text-transform: uppercase;
   font-weight: bolder;
-  letter-spacing: 1.3vw; }
+  letter-spacing: 1.3vw;
+  position: relative; }
 
 .red {
-  color: red;
+  color: #e03d24;
   text-align: right; }
+  .red::before {
+    content: "";
+    position: absolute;
+    top: -9vh;
+    border-bottom: 0.75vh solid #e03d24;
+    width: 7vw; }
 
 .white {
   color: white; }
+
+.heroes__subtitle-text-iron, .heroes__subtitle-text-spider, .heroes__subtitle-text-captain {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3vh;
+  font-weight: normal;
+  text-align: left;
+  position: absolute;
+  left: 5vw;
+  bottom: 7vh;
+  color: gray;
+  border-bottom: 0.7vh solid grey;
+  width: 20vw; }
+
+.for-slider {
+  font-size: 4vh;
+  font-weight: bolder;
+  color: black; }
 
 .body__bg-content {
   display: -webkit-box;
@@ -246,6 +271,27 @@ a, ul, li {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
 
+.nav-circle {
+  position: relative; }
+
+.nav-circle::after {
+  content: "";
+  position: absolute;
+  left: 0.3vh;
+  top: -6vh;
+  border: 0.3vh solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.nav-circle::before {
+  content: "";
+  position: absolute;
+  left: 0.3vh;
+  top: 14vh;
+  border: 0.3vh solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
 .heroes__wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -329,7 +375,7 @@ a, ul, li {
       z-index: -1; }
     .heroes__right-section-iron::before {
       content: "";
-      background: url("../img/ironman_PNG66.png");
+      background: url("../img/ironman_PNG65.png");
       background-position: center;
       -webkit-background-size: contain;
               background-size: contain;
@@ -420,10 +466,10 @@ a, ul, li {
       -webkit-background-size: contain;
               background-size: contain;
       background-repeat: no-repeat;
-      width: 22vw;
+      width: 32vw;
       height: 83vh;
       position: absolute;
-      left: -10vw;
+      left: -19vw;
       z-index: 1; }
 
 .heroes {
@@ -506,11 +552,41 @@ a, ul, li {
       -webkit-background-size: contain;
               background-size: contain;
       background-repeat: no-repeat;
-      width: 22vw;
-      height: 83vh;
+      width: 26vw;
+      height: 86vh;
       position: absolute;
       left: -10vw;
       z-index: 1; }
+
+.heroes__for-tanos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 6vw;
+  bottom: 15vh;
+  z-index: 3; }
+  .heroes__for-tanos-link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vh;
+    font-weight: normal;
+    text-transform: capitalize;
+    border: 1vh solid #e03d24;
+    background: #e03d24;
+    color: #fff;
+    -webkit-border-radius: 4%;
+            border-radius: 4%;
+    padding: 1vh 1.5vw; }
 
 .slider__content {
   position: relative;
@@ -519,21 +595,22 @@ a, ul, li {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  right: 0;
   width: auto;
-  margin-top: -5rem;
   color: #fff;
-  font-size: 3rem;
+  font-size: 4vh;
   -webkit-transition: 0.6s ease;
   -o-transition: 0.6s ease;
   transition: 0.6s ease;
-  margin-left: 4rem; }
+  margin-right: 6vw; }
   .prev:hover, .next:hover {
-    color: #0070af; }
+    color: #e03d24; }
+
+.prev {
+  bottom: 7vh; }
 
 .next {
-  right: 0;
-  margin-right: 4rem; }
+  top: 4vw; }
 
 .dot-wrap {
   display: -webkit-box;

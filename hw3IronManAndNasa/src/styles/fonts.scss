@@ -23,17 +23,52 @@
 // !!! HEROES FONTS !!! //
 
 .heroes__title-text-iron, .heroes__title-text-spider, .heroes__title-text-captain{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16vh;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 1.3vw;
+    position: relative;
 }
 
 .red{
-    color: red;
+    color: #e03d24;
     text-align: right;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: -9vh;
+        border-bottom: 0.75vh solid #e03d24;
+        width: 7vw;
+    }
+
+
 }
 
 .white{
     color: white;
+}
+
+.heroes__subtitle-text-{
+
+    &iron, &spider, &captain{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3vh;
+        font-weight: normal;
+        text-align: left;
+        position: absolute;
+        left: 5vw;
+        bottom: 7vh;
+        color: gray;
+        border-bottom: 0.7vh solid grey;
+        width: 20vw;
+    }
+
+}
+
+.for-slider{
+    font-size: 4vh;
+    font-weight: bolder;
+    color: black;
 }

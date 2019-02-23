@@ -55,7 +55,7 @@
 
         &::before{
             content: "";
-            background: url('../img/ironman_PNG66.png');
+            background: url('../img/ironman_PNG65.png');
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -125,10 +125,10 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            width: 22vw;
+            width: 32vw;
             height: 83vh;
             position: absolute;
-            left: -10vw;
+            left: -19vw;
             z-index: 1;
         }
 
@@ -191,13 +191,36 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            width: 22vw;
-            height: 83vh;
+            width: 26vw;
+            height: 86vh;
             position: absolute;
             left: -10vw;
             z-index: 1;
         }
 
+    }
+
+}
+
+.heroes__for-tanos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    right: 6vw;
+    bottom: 15vh;
+    z-index: 3;
+
+    &-link{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5vh;
+        font-weight: normal;
+        text-transform: capitalize;
+        border: 1vh solid #e03d24;
+        background: #e03d24;
+        color: #fff;
+        border-radius: 4%;
+        padding: 1vh 1.5vw;
     }
 
 }

@@ -75,3 +75,25 @@
 
 }
 
+.nav-circle{
+    position: relative;
+}
+
+.nav-circle::after{
+    content: "";
+    position: absolute;
+    left: 0.3vh;
+    top: -6vh;
+    border: 0.3vh solid #fff;
+    border-radius: 50%;
+}
+
+.nav-circle::before{
+    content: "";
+    position: absolute;
+    left: 0.3vh;
+    top: 14vh;
+    border: 0.3vh solid #fff;
+    border-radius: 50%;
+}
+
