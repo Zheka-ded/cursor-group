@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    background: url('../img/landscape-.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    &__wrap{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__menu{
+        width: 100%;
+        height: 7rem;
+        background: #fff;
+        border-radius: 4rem;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+
+        &-wrap{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-left{
+            display: flex;
+            width: 35.8%;
+            background-color: rgb(240, 14, 14);
+            height: 100%;
+            margin-left: 5rem;
+        }
+
+        &-right{
+            display: flex;
+            width: 19.23%;
+            height: 100%;
+            background-color: rgb(243, 12, 12);
+            margin-right: 4rem;
+        }
+
+    }
+
+    &__nav-ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
