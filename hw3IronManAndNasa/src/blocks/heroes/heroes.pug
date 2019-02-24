@@ -1,0 +1,34 @@
+section.heroes
+    .heroes__wrap.slider__content
+        .heroes__iron.mySlides.fade
+            .heroes__left-section-iron
+                p.heroes__title-text-iron.red|iron
+                p.heroes__subtitle-text-iron|#[span(class="for-slider") 01]/02/03
+            .heroes__right-section-iron
+                p.heroes__title-text-iron.white|man
+                .heroes__for-tanos
+                    a.heroes__for-tanos-link(href="https://www.youtube.com/watch?v=1JmycVHoZ1M" target="blank")|click on kill tanos
+        .heroes__spider.mySlides.fade
+            .heroes__left-section-spider
+                p.heroes__title-text-spider.red|spider
+                p.heroes__subtitle-text-spider|01/#[span(class="for-slider") 02]/03
+            .heroes__right-section-spider
+                p.heroes__title-text-spider.white|man
+                .heroes__for-tanos
+                    a.heroes__for-tanos-link(href="https://www.youtube.com/watch?v=1JmycVHoZ1M" target="blank")|click on kill tanos
+        .heroes__captain.mySlides.fade
+            .heroes__left-section-captain
+                p.heroes__title-text-captain.red|captain
+                p.heroes__subtitle-text-captain|01/02/#[span(class="for-slider") 03]
+            .heroes__right-section-captain
+                p.heroes__title-text-captain.white|america
+                .heroes__for-tanos
+                    a.heroes__for-tanos-link(href="https://www.youtube.com/watch?v=1JmycVHoZ1M" target="blank")|click on kill tanos
+        a.prev(onclick="plusSlides(-1)")
+            i(class="fas fa-long-arrow-alt-left")
+        a.next(onclick="plusSlides(1)")
+            i(class="fas fa-long-arrow-alt-right")
+        .dot-wrap(style="text-align: center")
+            span.dot(onclick="plusSlides(1)")
+            span.dot(onclick="plusSlides(2)")
+            span.dot(onclick="plusSlides(3)")
