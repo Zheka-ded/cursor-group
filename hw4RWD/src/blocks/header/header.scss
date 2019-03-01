@@ -1,6 +1,7 @@
 .header{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: url('../img/landscape-.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -37,17 +38,21 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 46%;
+            width: 50%;
             height: 100%;
             margin-left: 4rem;
         }
 
     }
 
+    &__nav{
+        width: 80%;
+    }
+
     &__nav-ul{
         display: flex;
         flex-direction: row;
-        width: 45rem;
+        // width: 45rem;
         justify-content: space-evenly;
     }
 
@@ -69,7 +74,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 26%;
+        width: 25%;
         height: 100%;
         margin-right: 4rem;
     }
@@ -86,3 +91,6 @@
     }
 
 }
+
+@import './title.scss';
+@import './bottom.scss';

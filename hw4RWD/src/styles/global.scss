@@ -2,16 +2,27 @@ html{
     font-size: 10px;
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 3600px) {
     html{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
+@media (min-width: 2100px) {
+    html{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1700) {
+    html{
+        font-size: 13rem;
+    }
+}
 
 @media (max-width: 1600px) {
     html{
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
@@ -37,7 +48,7 @@ html{
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    max-width: 130rem;
+    max-width: 100%;
     min-width: 16rem;
     margin: 0 auto;
 }

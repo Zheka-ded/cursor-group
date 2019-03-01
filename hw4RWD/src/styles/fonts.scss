@@ -12,3 +12,53 @@
     color: #31607e;
     font-size: 2rem;
 }
+
+.header__title{
+
+    &__title-text{
+        // font-family: 'ZCOOL QingKe HuangYou', cursive;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 6rem;
+        color: #fff;
+        text-transform: capitalize;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__subtitle-text{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #fff;
+        line-height: 1.2;
+    }
+
+    &__link-text{
+        font-family: 'Lato', sans-serif;
+        font-size: 2.4rem;
+        font-weight: 900;
+        color: #31607e;
+        text-transform: uppercase;
+    }
+
+}
+
+.header__bottom-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.Make_a_challengs {
+    font-size: 18px;
+    font-family: "CalistoMT";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    left: 1101.937px;
+    top: 555.072px;
+    z-index: 299;
+  }
+  

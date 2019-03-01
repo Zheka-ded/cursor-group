@@ -1,0 +1,73 @@
+.header{
+
+    &__bottom-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 8.5rem;
+    }
+
+    &__bottom-ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__bottom-link{
+        display: flex;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1.3rem;
+    }
+
+    &__bottom-text{
+        position: relative;
+        display: flex;
+        width: 20rem;
+        height: 2rem;
+        z-index: 0;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background: url('../img/icon.png');
+            background-position: center;
+            background-size: contain;
+            width: 2.5rem;
+            height: 2rem;
+            left: -3.5rem;
+            z-index: -1;
+        }
+
+    }
+
+}
+
+.people{
+
+    &__1{
+        background: url('../img/people1.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__2{
+        background: url('../img/people2.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__3{
+        background: url('../img/people3.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__4{
+        background: url('../img/people4.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+}
