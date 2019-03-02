@@ -18,6 +18,13 @@
         border-radius: 4rem;
         padding: 1.5rem 3.5rem;
         margin-top: 2.8rem;
+        transition: 1s;
+
+        &:hover{
+            transform: rotateX(360deg);
+            transition: 1s;
+        }
+
     }
 
 

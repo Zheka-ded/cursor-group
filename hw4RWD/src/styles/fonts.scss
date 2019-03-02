@@ -50,15 +50,50 @@
     line-height: 1.2;
 }
 
-.Make_a_challengs {
-    font-size: 18px;
-    font-family: "CalistoMT";
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: right;
-    position: absolute;
-    left: 1101.937px;
-    top: 555.072px;
-    z-index: 299;
-  }
-  
+// !!! CHOICE FONTS !!! //
+
+.choice{
+
+    &__title-text{
+        font-family: 'Lato', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1.2;
+        color: rgb(78, 92, 95);
+    }
+
+    &__title-text-mobile{
+        font-family: 'Lato', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1.2;
+        color: rgb(78, 92, 95);
+        display: none;
+
+    }
+
+    &__fitters-text{
+        font-family: 'Lato', sans-serif;
+        font-size: 1.6rem;
+        color: #7f7f7f;
+        // line-height: 1.2;
+    }
+
+}
+
+@media (max-width: 1079.98px) {
+
+    .choice{
+
+        &__title-text{
+            display: none;
+        }
+
+        &__title-text-mobile{
+            display: flex;
+        }
+        
+
+    }
+
+}

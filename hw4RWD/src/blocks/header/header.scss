@@ -11,7 +11,11 @@
 
     &__wrap{
         width: 90%;
+        height: 100%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__menu{
