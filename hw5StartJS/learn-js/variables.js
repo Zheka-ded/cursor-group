@@ -51,7 +51,52 @@
 // let ourPlanetName = `Земля`;
 // let currentUserName = `Федя`;
 
-let name = `Ilya`;
-alert(`hello ${1}`); // hello 1
-alert(`hello ${"name"}`); // hello name
-alert(`hello ${name}`); // hello Ilya
+// let name = `Ilya`;
+// alert(`hello ${1}`); // hello 1
+// alert(`hello ${"name"}`); // hello name
+// alert(`hello ${name}`); // hello Ilya
+
+// let fruits = ["Apple", "Orange", "Plum"];
+// alert( fruits[0] ); // Apple
+// alert( fruits[1] ); // Orange
+// alert( fruits[2] ); // Plum
+
+// let workPeople = ["NOSSS", "HEIGHT100%", "SMOUCK", "VOVO"];
+// workPeople[0] = `fukingNOSSS`;
+// workPeople[4] = `mimik`; // добавил один объект в массив
+// alert(workPeople.pop ( ) ); // берет один объект с массива и ваводит его
+// // alert(workPeople.push (`gogo`) ); //добавляет объект в конец массива
+// alert(workPeople.push (`gobo`, `bobo`, `yaebo`, `ebalo`) ); // + несколько объектов сразу
+// // alert(workPeople.push ( ) ); // выводит число оставшихся объектов массива
+// alert(workPeople); // вывел поименно весь массив
+
+// let fruits = ["Apple", "Orange", "Pear"];
+// alert( fruits.shift() ); // remove Apple and alert it
+// alert( fruits ); // Orange, Pear
+// // все тоже самое только наоборот с начала массива
+// let fruits = ["Orange", "Pear"];
+// fruits.unshift('Apple');
+// alert( fruits ); // Apple, Orange, Pear
+
+
+// let arr = [ 'mimik',{name: 'hz'}, true, function() { alert('hello'); }];
+// alert( arr[0].name );
+// arr[3]();
+
+// alert(workPeople.length);
+// alert(workPeople);
+// alert( workPeople [1] );
+// alert( workPeople [3] );
+
+function showMessage() {
+    // alert( `opapa` );
+    console.log('OFF');
+}
+
+showMessage();
+
+function zhopa() {
+    console.log(`!!!`); // называть функции можно хоть жопой
+}                              // работать будет отлично, проверено!
+
+zhopa();

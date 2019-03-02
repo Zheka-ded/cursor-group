@@ -4,3 +4,9 @@
 //     /* your code */ 
 // }
 // convert(2) // 16
+
+// let usd = 1;
+// x = usd;
+// let uan = 28;
+// y = uan;
+// console.log(x*y);
