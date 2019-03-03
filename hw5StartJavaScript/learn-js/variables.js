@@ -88,15 +88,14 @@
 // alert( workPeople [1] );
 // alert( workPeople [3] );
 
-function showMessage() {
-    // alert( `opapa` );
-    console.log('OFF');
-}
+// function showMessage() {
+//     console.log('OFF');
+// }
 
-showMessage();
+// showMessage();
 
-function zhopa() {
-    console.log(`!!!`); // называть функции можно хоть жопой
-}                              // работать будет отлично, проверено!
+// function zhopa() {
+//     console.log(`!!!`); // называть функции можно хоть жопой
+// }                              // работать будет отлично, проверено!
 
-zhopa();
+// zhopa();
