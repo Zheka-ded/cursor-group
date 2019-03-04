@@ -4,9 +4,12 @@
 //     /* your code */ 
 // }
 // convert(2) // 16
+let uan = 8;
 
-// let usd = 1;
-// x = usd;
-// let uan = 28;
-// y = uan;
-// console.log(x*y);
+function convert(amount) { 
+    // let uan = 8;
+    console.log(uan * 2);
+ }
+convert();
+
+// я понимаю что не так нужно написать, но не могу понять как
