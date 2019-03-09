@@ -43,17 +43,17 @@
 
 // let str = [`ironman`, `cursor`, `ostap`];
 
- function cursorCheck(str) {
-    if (str === `ironman`) {
-        return true;
-    } else if (str === `cursor`) {
-        return true;
-    } else if (str === `ostap`) {
-        return true;
-    } else{
-        return false;
-    }
- }
+//  function cursorCheck(str) {
+//     if (str === `ironman`) {
+//         return true;
+//     } else if (str === `cursor`) {
+//         return true;
+//     } else if (str === `ostap`) {
+//         return true;
+//     } else{
+//         return false;
+//     }
+//  }
 
 //  let str = prompt(`Who?`);
 

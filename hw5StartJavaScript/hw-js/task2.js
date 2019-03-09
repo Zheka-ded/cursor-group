@@ -1,16 +1,10 @@
-// function reverse(str) { 
-    
-//     return str.split("").reverse().join("");
+// // A function which returns reversed string. //
 
-//     // let str = 'abc';
-
-//     // str = str.split("").reverse().join("");
-// }
-// reverse('abc') // 'cba'
-// // console.log(reverse(str));
-
-// var str = "→Привет, Мир!";
-// var strRev = ""; // строка в обратном порядке
-// for (i = str.length-1; i >= 0; i--) {
-//   strRev += str[i];
-// }
+function reverse(n) {
+    let reverseStr = '';
+    for (i = n.length - 1; i >= 0; i--){
+        reverseStr += n[i];
+    }
+    console.log(reverseStr);
+}
+reverse(`cursor:)>`);
