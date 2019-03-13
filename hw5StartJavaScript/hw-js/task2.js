@@ -11,3 +11,17 @@ reverse(`cursor:)>`);                   // !==>!    // запись того ч�
 reverse(`iOld`);
 
 // Сапорты напишите если я что-то не правильно записал
+
+
+// Ниже пробные варианты. //
+
+
+// function reverse(n) {
+//     let reverseStr = '';
+//     for (i =-- n.length; i >= 0; i = i - 1) {
+//         reverseStr = reverseStr + n[i];
+//     }
+//     console.log(reverseStr);
+// }
+// reverse(`cursor:)>`);                   
+// reverse(`iOld`);
