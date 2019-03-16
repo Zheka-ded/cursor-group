@@ -613,6 +613,7 @@ a, ul, li {
   top: 4vw; }
 
 .dot-wrap {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -627,8 +628,7 @@ a, ul, li {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  right: -2vw;
-  bottom: 46%; }
+  right: -2vw; }
 
 .dot {
   cursor: pointer;

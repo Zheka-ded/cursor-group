@@ -28,12 +28,13 @@
 }
 
 .dot-wrap{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
     right: -2vw;
-    bottom: 46%;
+    // bottom: 46%;
 }
 
 .dot{
