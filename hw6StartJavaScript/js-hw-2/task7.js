@@ -5,8 +5,19 @@ function minMax(arr) {
     let min = arr[0];
     let max = arr[0];
 
+    // for (let i = 0; i < arr.length; i++){
+    //     if ( min > arr[i]) {
+    //         min = arr[i];
+    //     } else if(max < arr[i]) {
+    //         max = arr[i];
+    //     }
+    // }
+
+    // как правильно записать так как выше или так как ниже //
+    
     for (let i = 0; i < arr.length; i++){
         if ( min > arr[i]) min = arr[i];
+
         if(max < arr[i]) max = arr[i];
     }
 
@@ -20,7 +31,7 @@ function minMax(arr) {
     //     max
     // ]
 }
-console.log(minMax([1, 4, 8, 2, -20, (23 - 23445), 9432, 4, -3456, -9477]));
+console.log(minMax([1, 4, 8, 2, -20, ( -23 + -23445), 9432, 4, -3456, -9477]));
 
 
 // function min(arr) {
