@@ -1,9 +1,4 @@
 // Функция, которая возвращает общую сумму диапазона //
-// A function which returns total sum of a range //
-
-// function sumRange(start, end) { /* your code */ }
-// sumRange(2, 4) // 9
-// sumRange(-1, 3) // 5
 
 function sumRange(start, end) {
     // Выше имя нашей функциии //
@@ -20,7 +15,3 @@ function sumRange(start, end) {
 }
 sumRange(2, 4); // 9 //
 sumRange(-1, 3); // 5 //
-
-
-
- 

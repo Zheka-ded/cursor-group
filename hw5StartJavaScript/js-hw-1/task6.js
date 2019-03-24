@@ -1,10 +1,4 @@
-// // A function which prints the pyramid picture of size n //
 // Функция, которая печатает изображение размера пирамиды n //
-// // function printPyramid(n) { /* your code */ } //
-// // printStairs(3) //
-// //   #  //
-// //  ###  //
-// // #####  //
 
 // https://www.youtube.com/watch?v=ItOmYp9AKOA 
 // видео кода пирамиды
@@ -15,8 +9,8 @@
 
 function printPyramid(n) {
     let result = ``;
-    let someSymbol = `#`;
-    let shadowSymbol = ` `;
+    const someSymbol = `#`;
+    const shadowSymbol = ` `;
 
     for (let i = 1; i <= n; i++) {
         let result = ``;
@@ -31,3 +25,11 @@ function printPyramid(n) {
     return result;
 }
 printPyramid(3);
+
+
+const printPyramidMini = n => {
+    for(let i=0; i < n; i++)
+      console.log(" ".repeat(n-i) + "#".repeat(2 * i + 1));
+  }
+  
+  printPyramidMini(3);

@@ -1,9 +1,4 @@
-// A function which removes duplication of letters in string. The function must be case-insensitive. //
 // Функция, которая удаляет дублирование букв в строке. Функция должна быть без учета регистра. //
-
-
-// function removeDuplicationLetters(str) { /* your code */ }
-// removeDuplicationLetters('Hello I am Iron Man') // 'Helo I am rn '
 
 
 function removeDuplicationLetters(str) {
@@ -25,14 +20,10 @@ console.log(removeDuplicationLetters('Hello I am Iron Man'));
 
 
 
-// function removeDuplicationLetters(str) {
-//     let result = ``;
-//     for (let i = 0; i < str.length; i++) {
-//         if ( str[i] === ` ` || !result.toLowerCase().includes(str[i].toLowerCase()) ) {
-//             result = result + str[i];
-//         }
-//     }
-//     return result;
-// }
-// console.log(removeDuplicationLetters('Hello I am Iron Man'));
-// removeDuplicationLetters('Hello I am Iron Man');
+
+unique_char = str => str.split('').reduce((s, v) =>
+    (!s.toLowerCase().includes(v.toLowerCase()) || v === ' ') ? (s + v) : s
+);
+
+console.log(unique_char("Hello I am Iron Man"));
+

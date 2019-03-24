@@ -1,4 +1,3 @@
-// A function which transforms first and last letter to uppercase (use built in string’s method). //
 // Функция, которая преобразует первую и последнюю букву в верхний регистр (используйте встроенный метод строки). //
 
 
