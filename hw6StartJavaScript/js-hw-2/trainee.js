@@ -1,175 +1,191 @@
-// // Функция, которая возвращает объект с минимальными и максимальными числами из массива чисел. //
+// Лекция с Дмитрием //
 
+// let counter = (function () {
+//     let count = 0;
+//     return function () {
 
-// function minMax(arr) {
-//     let min = arr[0];
-//     let max = arr[0];
-
-//     for (let i = 0; i < arr.length; i++){
-//         if ( min > arr[i]) min = arr[i];
-//         if(max < arr[i]) max = arr[i];
+//         return count++
 //     }
+// }());
 
-    
+// let counter = function (num) {
+//     counter.count = num !== undefined ? num : counter.count
+//     return counter.count++
+// }
+// counter.count = 0;
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+
+// IIFE
+// Так было в ES-5
+// let carColor = `Grey`;
+
+// const car = (function () {
 //     return{
-//         min,
-//         max
-//     }
-
-//     // return[
-//     //     min,
-//     //     max
-//     // ]
-    
-// }
-// console.log(minMax([1, 4, 8, 2, -20, (23 - 23445), 432, 4, -3456, -477]));
-
-
-// function min(arr) {
-//     let min = arr[0];
-//     // в min будет сщхранено минимальное значение массива //
-//     for (let i = 0; i < arr.length; i++) {
-//         // цикл работает по всей длинне массива //
-//         if ( min > arr[i]) min = arr[i];
-//         // если минимальное значение больше значения массива 
-//         // минимальное значение перезаписывается, и так по 
-//         // всей длинне массива
-//     }
-//     return min;
-// }
-// // min([1, 4, 8, 2, 20]) // { max: 20, min: 1 }
-// console.log(min([1, 4, 8, 2, -20, 432, 4, -3456, -477]));
-// console.log(min([1, 4, 8, 2, -20, (23 - 23445), 432, 4, -3456, -477]));
-
-// function max(arr) {
-//     let max = arr[0];
-
-//     for (let i = 0; i < arr.length; i++) {
-//         if(max < arr[i]) max = arr[i];
-//     }
-
-//     return max;
-// }
-// // max([1, 4, 8, 2, 20]) // { max: 20, min: 1 }
-// console.log(max([1, 4, 8, 2, -20, 432, 4, 3456, -477]));
-
-// function minMax(arr) {
-//     let min = arr[0];
-//     let max = arr[0];
-
-//     for (let i = 0; i < arr.length; i++){
-//         if ( min > arr[i]) min = arr[i];
-//         if(max < arr[i]) max = arr[i];
-//     }
-
-//     return{
-//         min,
-//         max
-//     }
-// }
-// console.log(minMax([1, 4, 8, 2, -20, (23 - 23445), 432, 4, -3456, -477]));
-
-
-
-
-
-
-
-
-
-
-// Функция , которая возвращает сумму всех чисел от 1до nиспользования рекурсии.
-// function sumAll(n) {
-//     if (n === 1 || n === 0)
-// }
-// sumAll(2); // 3
-// sumAll(4); // 10
-
-
-
-// function removeDuplicationLetters(str) {
-//     let result = ``;
-//     for (let i = 0; i < str.length; i++) {
-//         if ( str[i] === ` ` || !result.toLowerCase().includes(str[i].toLowerCase()) ) {
-//             result = result + str[i];
+//         changeToRed: function () {
+//             carColor = `Red`;
+//             return carColor;
+//         },
+//         changeToBlack: function () {
+//             carColor = `Black`;
+//             return carColor;
 //         }
 //     }
-//     return result;
-// }
-// console.log(removeDuplicationLetters('Hello I am Iron Man'));
-// removeDuplicationLetters('Hello I am Iron Man');
+// })();
 
+// console.log(carColor);
+// console.log(car.changeToBlack());
 
+// Так стало в ES-6 
 
+// let carColor = `Grey`;
 
-
-
-
-
-
-
-
-
-
-
-// // Функция, которая возвращает общую сумму диапазона //
-// // A function which returns total sum of a range //
-
-// // function sumRange(start, end) { /* your code */ }
-// // sumRange(2, 4) // 9
-// // sumRange(-1, 3) // 5
-
-// function sumRange(start, end) {
-//     // Выше имя нашей функциии //
-//     let sum = 0;
-//     // Это наша переменная и начальное значение нашего будущего результата //
-//     for (let i = start; i <= end; i = i + 1) {
-//         sum = sum + i;
-//     }
-//     // Это условие. Функция начинает работать с переменной start, //
-//     // и работает пока i меньше или равно переменной end. //
-//     // В sumRange записывается результат наших вычислений //
-//     return sum;
-//     // console.log(sum);
-// }
-// sumRange(2, 4); // 9 //
-// sumRange(-1, 3); // 5 //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function filterNumbers(arr, maxNumber) {
-//     // let arr = arr.length;
-//     let result = arr;
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] < maxNumber) {
-//             result = arr.length;
-//         } else {
-            
+// const car = (() => {
+//     return{
+//         changeToRed: () => {
+//             carColor = `Red`;
+//             return carColor;
+//         },
+//         changeToBlack: () => {
+//             carColor = `Black`;
+//             return carColor;
 //         }
 //     }
-//     return result;
+// })();
+
+// console.log(carColor);
+// console.log(car.changeToBlack());
+
+
+// let result = (function (a, b) {
+//     return a + b;
+// })(2, 3);
+
+// console.log(result);
+
+
+
+
+// function first () {
+//     setTimeout (function () {
+//         console.log(`1`);
+//     }, 2000)
+    
+// } 
+
+// function second() {
+//     console.log(`2`);
 // }
-// filterNumbers([1, 4, 8, 1, 20], 5); // [1, 4, 1]
-// console.log(filterNumbers([1, 4, 8, 1, 20], 5));
+
+// first();
+// second();
+
+
+
+
+
+
+
+// function first (callback) {
+//     console.log(`1`);
+//     // setTimeout (function () {
+//     //     console.log(`1`);
+//     // }, 2000)
+// }
+
+// function second(a, b) {
+//     console.log(a + b);
+// }
+
+// first(second(11, 11));
+
+
+
+
+function first (callback) {
+    console.log(`1`);
+    callback();
+
+}
+
+first(function() {
+    console.log(2*4);
+});
+
+
+
+
+
+
+
+
+// function first () {
+//     let nTime = 10000;
+//     // console.log(`1`);
+//     setTimeout(function () {
+//         console.log(`1`);
+//     }, nTime)
+// }
+
+// function second () {
+//     console.log(`2`);
+// }
+
+// first();
+// second();
+
+
+// function printTimeout(str, n) {
+//     let time = 1000 * n;
+//     setTimeout(function () {
+//         return str;
+//     }, time)
+// }
+// printTimeout('hello', 2);
+// console.log(printTimeout('hello', 2));
+
+
+// function convert(n) {
+//     const UAN_CURENCY = 27;
+//     const SUM = n*UAN_CURENCY;
+//     // console.log(SUM);
+//     return SUM;
+// }
+// convert(5);
+// console.log(convert(5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -405,25 +421,25 @@
 
 
 
-function filterNumbers(arr, maxNumber) {
-    // let arr = arr.length;
-    let result = arr;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < maxNumber) {
-            result = arr.length;
-        } else {
+// function filterNumbers(arr, maxNumber) {
+//     // let arr = arr.length;
+//     let result = arr;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < maxNumber) {
+//             result = arr.length;
+//         } else {
             
-        }
-    }
-    return result;
-}
-filterNumbers([1, 4, 8, 1, 20], 5); // [1, 4, 1]
-console.log(filterNumbers([1, 4, 8, 1, 20], 5));
+//         }
+//     }
+//     return result;
+// }
+// filterNumbers([1, 4, 8, 1, 20], 5); // [1, 4, 1]
+// console.log(filterNumbers([1, 4, 8, 1, 20], 5));
 
 
-const arr = [1, 4, 8, 1, 20];
-const updatedArr = arr.map(item => {
-    return item < 5;
-});
+// const arr = [1, 4, 8, 1, 20];
+// const updatedArr = arr.map(item => {
+//     return item < 5;
+// });
 
-console.log(updatedArr);
+// console.log(updatedArr);
