@@ -12,9 +12,9 @@ function factorial(n) {
     
     return result;
 }
-//  factorial(3); // 6
-// factorial(5); // 120
-// console.log(factorial(3));
+ factorial(3); // 6
+factorial(5); // 120
+console.log(factorial(3));
 console.log(factorial(5));
 
 

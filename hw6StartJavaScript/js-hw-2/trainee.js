@@ -112,15 +112,44 @@
 
 
 
-function first (callback) {
-    console.log(`1`);
-    callback();
+// function first (callback) {
+//     console.log(`1`);
+//     callback();
 
-}
+// }
 
-first(function() {
-    console.log(2*4);
-});
+// first(function() {
+//     console.log(2*4);
+// });
+
+
+
+
+// function press(callback) {
+//     console.log(`Press button`);
+//     callback();
+// }
+
+// function statusCheker() {
+//     console.log(`Pressed`);
+// }
+
+// // press(statusCheker());
+// press(statusCheker);
+
+
+
+
+// setTimeout(function() {
+//     console.log(`1`);
+// }, 1000);
+
+// setTimeout(function() {
+//     console.log(`2`);
+// });
+
+// setTimeout(console.log(`3`));
+// setTimeout(console.log(`4`), 5000);
 
 
 
@@ -366,6 +395,7 @@ first(function() {
 //     name: `Bla-bla-bal`
 // });
 // console.log(users);
+// console.log(users.name, users.birthday);
 
 
 
@@ -419,27 +449,224 @@ first(function() {
 
 
 
+// практика с Богданом //
+
+// Date Даты
+
+// let now = new Date();
+// console.log(now);
+
+// let now = new Date(`2002-10-08`);
+// console.log(now);
+
+// let now = new Date(2019, 10, 22, 23, 55, 27);
+// console.log(now);
+
+// let nowParse = Date.parse(new Date);
+// console.log(nowParse);
+
+// let now = new Date();
+// console.log(now.getTimezoneOffset());
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getMonth() + 1);
+
+// let now = new Date();
+// console.log( +now );
+
+// let now2 = new Date(1554313167204);
+// console.log(`now2: `, now2);
 
 
-// function filterNumbers(arr, maxNumber) {
-//     // let arr = arr.length;
-//     let result = arr;
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] < maxNumber) {
-//             result = arr.length;
-//         } else {
-            
-//         }
+// let now = new Date();
+// console.log(now.getMilliseconds());
+// // console.log(now.toLocaleString());
+// console.log(now.toString());
+// console.log(now.toLocaleString(`uk`, {
+//     year: `numeric`,
+//     month: `long`,
+//     day: `numeric`
+// }));
+
+
+// // пример 12-го задания с практики //
+
+// function adult(birthday) {
+//     birthday = new Date(birthday);
+//     // console.log(`birthday: `, birthday);
+//     let minDate = new Date();
+//     // console.log(`minDate: `, minDate);
+//     minDate.setFullYear(minDate.getFullYear() - 18);
+//     return birthday < minDate;
+// }
+
+// console.log( adult(`1990-01-01`) );
+// console.log( adult(`2002-01-01`) );
+
+
+// moment.locale(`uk`);
+
+// let now = moment();
+// // let now = moment().subtract(21, `month`).add(10, `years`);
+// // let now = moment({year: 2005, mounth: 10});
+// // let now = moment([2002, 10, 10]);
+// now.isValid();
+// console.log(`now.isValid: `, now.isValid());
+
+// console.log(`now: `, now.format(`DD-MMMM-YYYY dddd`));
+// console.log(`now: `, now);
+// console.log(`now.format: `, now.format());
+// console.log(`now.format: `, now.format(`DD-MMMM-YYYY dddd`));
+
+// let goBack = moment().subtract(21, `month`).add(10, `years`).toNow();
+// console.log(`goBack: `, goBack);
+
+// let futureIsNow = moment().subtract(21, `month`).add(10, `years`).fromNow();
+// console.log(`futureIsNow: `, futureIsNow);
+
+
+// function adultMoment(birthday) {
+//     return moment(birthday).isBefore(moment().subtract(18, `years`));
+// }
+
+
+// console.log( adultMoment(`1990-01-01`) );
+// console.log( adultMoment(`2001-04-01`) );
+
+
+
+
+
+
+
+
+// // Recursion Рекурсия
+// function pow(x, n) {
+//     let result;
+
+//     if(n > 1) {
+//         result = x * pow(x, n - 1);
+//     } else {
+//         result = x;
 //     }
+
+//     // if (n < 1) {
+//     //     result = x;
+//     // } else {
+//     //     result = x * pow(x, ((n - 1)-1));
+//     // }
+
+//     console.log(`result: `, result);
+
 //     return result;
 // }
-// filterNumbers([1, 4, 8, 1, 20], 5); // [1, 4, 1]
-// console.log(filterNumbers([1, 4, 8, 1, 20], 5));
+
+// console.log( pow(6, 3) );
 
 
-// const arr = [1, 4, 8, 1, 20];
-// const updatedArr = arr.map(item => {
-//     return item < 5;
+
+
+
+// Lodash //
+
+
+const usersOne = [
+    { name: 'John', birthday: '1999-6-12' },
+    { name: 'Bill', birthday: '2005-5-19' },
+    { name: 'Carol', birthday: '2003-10-11' },
+    { name: 'Luce', birthday: '2000-11-22' }
+  ];
+
+  const users = [{
+    "id": 1,
+    "name": "Krisha",
+    "email": "kmahoney0@springer.com",
+    "gender": "Male",
+    "birthday": "1990-08-15"
+  }, {
+    "id": 2,
+    "name": "Rayner",
+    "email": "rmarquot1@gov.uk",
+    "gender": "Male",
+    "birthday": "2002-03-15"
+  }, {
+    "id": 3,
+    "name": "Jojo",
+    "email": "jredmille2@aboutads.info",
+    "gender": "Female",
+    "birthday": "2005-10-22"
+  }, {
+    "id": 4,
+    "name": "Valentino",
+    "email": "vrattenberie3@hp.com",
+    "gender": "Male",
+    "birthday": "1993-09-29"
+  }, {
+    "id": 5,
+    "name": "Allene",
+    "email": "amccrostie4@mapquest.com",
+    "gender": "Female",
+    "birthday": "2000-06-17"
+  }];
+  
+
+// _.forEach(usersOne, function(user) {
+//     console.log(user.name,`,`, user.birthday);
 // });
 
-// console.log(updatedArr);
+// _.forEach(users[1], function(prop){
+//   console.log(prop);
+// });
+
+_.forEach(users, function(key, prop){
+  console.log(key, prop);
+});
+
+_.forEach(users[users.length-1], function(key, prop){
+  console.log(key, prop);
+});
+
+// _.forEach(users, function(user) {
+//     console.log(user.name,`,`, user.birthday);
+//     // console.log(user.gender, user.email);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const users = [
+//     { name: 'John', birthday: '1999-6-12' },
+//     { name: 'Bill', birthday: '2005-5-19' },
+//     { name: 'Carol', birthday: '2003-10-11' },
+//     { name: 'Luce', birthday: '2000-11-22' }
+//   ];

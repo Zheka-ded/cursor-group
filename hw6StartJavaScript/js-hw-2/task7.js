@@ -5,21 +5,21 @@ function minMax(arr) {
     let min = arr[0];
     let max = arr[0];
 
-    // for (let i = 0; i < arr.length; i++){
-    //     if ( min > arr[i]) {
-    //         min = arr[i];
-    //     } else if(max < arr[i]) {
-    //         max = arr[i];
-    //     }
-    // }
+    for (let i = 0; i < arr.length; i++){
+        if ( min > arr[i]) {
+            min = arr[i];
+        } else if(max < arr[i]) {
+            max = arr[i];
+        }
+    }
 
     // как правильно записать так как выше или так как ниже //
     
-    for (let i = 0; i < arr.length; i++){
-        if ( min > arr[i]) min = arr[i];
+    // for (let i = 0; i < arr.length; i++){
+    //     if ( min > arr[i]) min = arr[i];
 
-        if(max < arr[i]) max = arr[i];
-    }
+    //     if(max < arr[i]) max = arr[i];
+    // }
 
     return{
         min,
@@ -36,7 +36,7 @@ console.log(minMax([1, 4, 8, 2, -20, ( -23 + -23445), 9432, 4, -3456, -9477]));
 
 // function min(arr) {
 //     let min = arr[0];
-//     // в min будет сщхранено минимальное значение массива //
+//     // в min будет сохранено минимальное значение массива //
 
 //     for (let i = 0; i < arr.length; i++) {
 //         // цикл работает по всей длинне массива //
