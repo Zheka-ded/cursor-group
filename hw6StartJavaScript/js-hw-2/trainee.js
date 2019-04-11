@@ -574,7 +574,8 @@ const usersOne = [
     { name: 'John', birthday: '1999-6-12' },
     { name: 'Bill', birthday: '2005-5-19' },
     { name: 'Carol', birthday: '2003-10-11' },
-    { name: 'Luce', birthday: '2000-11-22' }
+    { name: 'Luce', birthday: '2000-11-22' },
+    { name: 'Lily', birthday: '2001-01-22' }
   ];
 
   const users = [{
@@ -618,19 +619,26 @@ const usersOne = [
 //   console.log(prop);
 // });
 
-_.forEach(users, function(key, prop){
-  console.log(key, prop);
-});
-
-_.forEach(users[users.length-1], function(key, prop){
-  console.log(key, prop);
-});
-
-// _.forEach(users, function(user) {
-//     console.log(user.name,`,`, user.birthday);
-//     // console.log(user.gender, user.email);
+// _.forEach(users[1], function(key, prop){
+//   console.log(key, prop);
 // });
 
+// _.forEach(users[users.length-1], function(key, prop){
+//   console.log(key, prop);
+// });
+
+// _.forEach(users, function(user) {
+//     // console.log(user.name,`,`, user.birthday);
+//     console.log(user.gender, user.email);
+// });
+
+_.forEach(usersOne, function (user){
+  console.log(user.name);
+})
+
+_.forEach(users, function (user){
+  console.log(user.name);
+})
 
 
 
@@ -647,26 +655,3 @@ _.forEach(users[users.length-1], function(key, prop){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const users = [
-//     { name: 'John', birthday: '1999-6-12' },
-//     { name: 'Bill', birthday: '2005-5-19' },
-//     { name: 'Carol', birthday: '2003-10-11' },
-//     { name: 'Luce', birthday: '2000-11-22' }
-//   ];
