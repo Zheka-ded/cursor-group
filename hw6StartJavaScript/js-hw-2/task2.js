@@ -1,10 +1,10 @@
 // Функция , которая возвращает сумму всех чисел от 1 до n использования рекурсии. //
 
 function sumAllRecursion(nRecursion) {
-    let resultRecursion = nRecursion + sumAll(nRecursion - 1);
+//     let resultRecursion = nRecursion + sumAll(nRecursion - 1);
     if (nRecursion != 1) {
-        // return nRecursion + sumAll(nRecursion - 1);
-        return resultRecursion;
+        return nRecursion + sumAllRecursion(nRecursion - 1);
+//         return resultRecursion;
     } else {
         return nRecursion;
     }
