@@ -1,0 +1,24 @@
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transform: translateX(-100%);
+    /* bottom: 0px; */
+    width: 50px;
+    background: cadetblue;
+    transition: all 0.5s;
+}
+
+.menu.opened{
+    transform: rotateX(0);
+    transition: all 0.5s;
+}
+
+.ddm__wrap{
+    transition: all 0.5s;
+}
+/* пододвигает все меню */
+.menu.opened + .ddm__wrap{
+    margin-left: 50px;
+    transition: all 0.5s;
+}
